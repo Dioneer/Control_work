@@ -3,7 +3,7 @@
 _Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам_
 ## Language used:
 - C#
-## logic:
+## Logic:
 1. Requesting the length of the array
 2. requesting the strings
 3. filling in the array
