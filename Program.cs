@@ -39,5 +39,26 @@ namespace ControlWork
 			}
 			System.Console.WriteLine("");
 		}
+
+		public static string[] CreateNewArr(string[] Array)
+		{
+			int length = 0;
+			for (int i = 0; i < Array.Length; i++)
+			{
+				if (Array[i].Length <= 3) length++;
+			}
+
+			string[] ResultArr = new string[length];
+			int j = 0;
+			for (int i = 0; i < Array.Length; i++)
+			{
+				if (Array[i].Length <= 3)
+				{
+					ResultArr[j] = Array[i];
+					j++;
+				}
+			}
+			return ResultArr;
+		}
 	}
 }
