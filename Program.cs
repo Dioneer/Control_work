@@ -27,5 +27,17 @@ namespace ControlWork
 			}
 			return Arr;
 		}
+		public static void ShowArr(string[] Array)
+		{
+			System.Console.WriteLine("");
+			for (int i = 0; i < Array.GetLength(0); i++)
+			{
+				if (i == 0) System.Console.Write($"['{Array[i]}', ");
+				else if (i < Array.GetLength(0) - 1)
+					System.Console.Write($"'{Array[i]}', ");
+				else System.Console.Write($"'{Array[i]}']");
+			}
+			System.Console.WriteLine("");
+		}
 	}
 }
