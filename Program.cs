@@ -49,13 +49,13 @@ namespace ControlWork
 			}
 
 			string[] ResultArr = new string[length];
-			int j = 0;
+			int jindex = 0;
 			for (int i = 0; i < Array.Length; i++)
 			{
-				if (Array[i].Length <= 3)
+				if (Array[i].Length <= 3 && jindex < length)
 				{
-					ResultArr[j] = Array[i];
-					j++;
+					ResultArr[jindex] = Array[i];
+					jindex++;
 				}
 			}
 			return ResultArr;
